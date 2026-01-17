@@ -1,0 +1,153 @@
+/* VULCANO Brand Colors */
+:root {
+  --color-magma: #cb3426;
+  --color-ash: #9d8060;
+  --color-cream: #fbeed9;
+  --color-black: #000000;
+
+  /* Typography - Brand Identity Vulcano */
+  --font-logo: 'Josefin Sans', sans-serif;  /* Font geometrico per logo/titoli */
+  --font-display: 'Cormorant Garamond', Georgia, serif;  /* Font elegante per sottotitoli */
+  --font-body: 'Josefin Sans', -apple-system, sans-serif;  /* Font body */
+
+  /* Spacing */
+  --section-padding: 100px;
+  --container-max-width: 1200px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-cream);
+  background-color: var(--color-black);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-cream);
+  background: transparent;
+  color: var(--color-cream);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: var(--color-cream);
+  color: var(--color-black);
+}
+
+.btn--primary {
+  background: var(--color-magma);
+  border-color: var(--color-magma);
+}
+
+.btn--primary:hover {
+  background: transparent;
+  color: var(--color-magma);
+  border-color: var(--color-magma);
+}
+
+/* Section Base */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--section-padding) 0;
+  position: relative;
+}
+
+.section--dark {
+  background: var(--color-black);
+}
+
+.section--cream {
+  background: var(--color-cream);
+  color: var(--color-black);
+}
+
+.section--ash {
+  background: var(--color-ash);
+  color: var(--color-cream);
+}
+
+/* Typography Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-magma {
+  color: var(--color-magma);
+}
+
+.text-ash {
+  color: var(--color-ash);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px;
+  }
+
+  .btn {
+    padding: 14px 32px;
+    font-size: 0.8rem;
+  }
+}

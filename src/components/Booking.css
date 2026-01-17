@@ -1,0 +1,140 @@
+.booking {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--section-padding) 0;
+  background: var(--color-black);
+}
+
+.booking__content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.booking__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  color: var(--color-cream);
+}
+
+.booking__text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-ash);
+  margin-bottom: 48px;
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.booking__form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.booking__field {
+  flex: 1;
+}
+
+.booking__field--full {
+  width: 100%;
+}
+
+.booking__field input,
+.booking__field select,
+.booking__field textarea {
+  width: 100%;
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-cream);
+  background: transparent;
+  border: 1px solid var(--color-ash);
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.booking__field input::placeholder,
+.booking__field textarea::placeholder {
+  color: var(--color-ash);
+  opacity: 0.7;
+}
+
+.booking__field input:focus,
+.booking__field select:focus,
+.booking__field textarea:focus {
+  border-color: var(--color-magma);
+}
+
+.booking__field select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239d8060' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.booking__field select option {
+  background: var(--color-black);
+  color: var(--color-cream);
+}
+
+.booking__field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.booking__contact {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(157, 128, 96, 0.3);
+}
+
+.booking__contact p {
+  font-size: 0.85rem;
+  color: var(--color-ash);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.booking__phone {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-cream);
+  transition: color 0.3s ease;
+}
+
+.booking__phone:hover {
+  color: var(--color-magma);
+}
+
+/* Animation States */
+.section--visible .fade-element {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .booking__form-row {
+    flex-direction: column;
+  }
+
+  .booking__field input,
+  .booking__field select,
+  .booking__field textarea {
+    padding: 14px 16px;
+  }
+}
