@@ -198,12 +198,26 @@ export default function Food() {
   return (
     <div className="food-page">
       <Helmet>
-        <title>Cucina Mediterranea | VULCANO Ponte Milvio</title>
+        <title>Il Menu di Vulcano | Cucina con Pizza a Ponte Milvio</title>
         <meta
           name="description"
-          content="Menu VULCANO: Antipasti, Primi, Secondi e Pizze. Cucina mediterranea contemporanea di alta qualità da gustare nella nostra terrazza a Ponte Milvio, Roma."
+          content="Antipasti gourmet, primi della tradizione romana e una selezione di pizze romane. Prenota il tuo tavolo per una cena indimenticabile a Roma Nord."
         />
         <link rel="canonical" href="https://www.vulcanopontemilvio.com/food" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vulcanopontemilvio.com/food" />
+        <meta property="og:title" content="Il Menu di Vulcano | Cucina con Pizza a Ponte Milvio" />
+        <meta property="og:description" content="Antipasti gourmet, primi della tradizione romana e una selezione di pizze romane. Prenota il tuo tavolo per una cena indimenticabile a Roma Nord." />
+        <meta property="og:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.vulcanopontemilvio.com/food" />
+        <meta property="twitter:title" content="Il Menu di Vulcano | Cucina con Pizza a Ponte Milvio" />
+        <meta property="twitter:description" content="Antipasti gourmet, primi della tradizione romana e una selezione di pizze romane. Prenota il tuo tavolo per una cena indimenticabile a Roma Nord." />
+        <meta property="twitter:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
       </Helmet>
       <div className="food-hero">
         <Link to="/" className="food-back">

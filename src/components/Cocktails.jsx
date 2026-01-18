@@ -54,12 +54,26 @@ export default function Cocktails() {
   return (
     <div className="cocktails-page">
       <Helmet>
-        <title>Alchimia Liquida - Cocktail Bar | VULCANO Ponte Milvio</title>
+        <title>La drinklist di vulcano | Cocktail Bar e Mixology a Ponte Milvio</title>
         <meta
           name="description"
-          content="Scopri la drink list di VULCANO: Signature Drinks, Spritz e cocktail analcolici. Mixology d'avanguardia per il tuo aperitivo e dopocena a Ponte Milvio, Roma."
+          content="Dai Signature Drinks ai classici rivisitati. Scopri la nostra drink list esclusiva, perfetta per un aperitivo o un dopocena vibrante da VULCANO."
         />
         <link rel="canonical" href="https://www.vulcanopontemilvio.com/cocktails" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vulcanopontemilvio.com/cocktails" />
+        <meta property="og:title" content="La drinklist di vulcano | Cocktail Bar e Mixology a Ponte Milvio" />
+        <meta property="og:description" content="Dai Signature Drinks ai classici rivisitati. Scopri la nostra drink list esclusiva, perfetta per un aperitivo o un dopocena vibrante da VULCANO." />
+        <meta property="og:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.vulcanopontemilvio.com/cocktails" />
+        <meta property="twitter:title" content="La drinklist di vulcano | Cocktail Bar e Mixology a Ponte Milvio" />
+        <meta property="twitter:description" content="Dai Signature Drinks ai classici rivisitati. Scopri la nostra drink list esclusiva, perfetta per un aperitivo o un dopocena vibrante da VULCANO." />
+        <meta property="twitter:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
       </Helmet>
       <div className="cocktails-hero">
         <Link to="/" className="cocktails-back">

@@ -15,25 +15,25 @@ export default function Events() {
     return (
         <section className="events">
             <Helmet>
-                <title>Formule Evento | VULCANO Ponte Milvio</title>
+                <title>Le formule di Vulcano: La Location per le tue Serate Speciali</title>
                 <meta
                     name="description"
-                    content="Scopri le formule evento di VULCANO: Apericena, Dopocena, eventi privati e selezione vini. Organizza il tuo evento esclusivo a Roma Ponte Milvio."
+                    content="Compleanni, lauree o cene aziendali? Scopri le nostre formule dedicate con drink list esclusiva e DJ set. Rendi unica la tua festa a Ponte Milvio."
                 />
                 <link rel="canonical" href="https://www.vulcanopontemilvio.com/events" />
 
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.vulcanopontemilvio.com/events" />
-                <meta property="og:title" content="Formule Evento | VULCANO Ponte Milvio" />
-                <meta property="og:description" content="Scopri le formule evento di VULCANO: Apericena, Dopocena, eventi privati e selezione vini. Organizza il tuo evento esclusivo a Roma Ponte Milvio." />
+                <meta property="og:title" content="Le formule di Vulcano: La Location per le tue Serate Speciali" />
+                <meta property="og:description" content="Compleanni, lauree o cene aziendali? Scopri le nostre formule dedicate con drink list esclusiva e DJ set. Rendi unica la tua festa a Ponte Milvio." />
                 <meta property="og:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://www.vulcanopontemilvio.com/events" />
-                <meta property="twitter:title" content="Formule Evento | VULCANO Ponte Milvio" />
-                <meta property="twitter:description" content="Scopri le formule evento di VULCANO: Apericena, Dopocena, eventi privati e selezione vini. Organizza il tuo evento esclusivo a Roma Ponte Milvio." />
+                <meta property="twitter:title" content="Le formule di Vulcano: La Location per le tue Serate Speciali" />
+                <meta property="twitter:description" content="Compleanni, lauree o cene aziendali? Scopri le nostre formule dedicate con drink list esclusiva e DJ set. Rendi unica la tua festa a Ponte Milvio." />
                 <meta property="twitter:image" content="https://www.vulcanopontemilvio.com/logo_vulcano.png" />
             </Helmet>
             <div className="container">
