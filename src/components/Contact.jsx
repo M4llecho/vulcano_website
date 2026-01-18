@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Contact.css'
 
 export default function Contact() {
@@ -10,9 +11,18 @@ export default function Contact() {
       <div className="container">
         <div className="contact__content">
           <h2 className="contact__title fade-element">Prenota la Tua Esperienza</h2>
-          <p className="contact__text fade-element">
-            Riserva il tuo tavolo e preparati a vivere una serata indimenticabile.
-          </p>
+          <div className="contact__text-wrapper fade-element">
+            <p className="contact__text">
+              Riserva il tuo tavolo e preparati a vivere una serata indimenticabile.<br />
+              <span className="contact__text-highlight">
+                Si ricorda che per le prenotazioni dopocena è richiesta la maggiore età e un abbigliamento curato. <br />
+                Nel weekend viene effettuata selezione alla porta.
+              </span>
+            </p>
+            <Link to="/info" className="contact__policy-link">
+              Leggi informazioni complete, dress code e policy
+            </Link>
+          </div>
 
           <a
             href={whatsappLink}

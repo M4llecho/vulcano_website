@@ -1,0 +1,128 @@
+.booking-info {
+    min-height: 100vh;
+    padding: 120px 0;
+    background: var(--color-black);
+}
+
+.booking-info__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-info__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.booking-info__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--color-cream);
+    margin-bottom: 20px;
+}
+
+.booking-info__subtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-ash);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-info__card {
+    background: rgba(157, 128, 96, 0.05);
+    border: 1px solid rgba(157, 128, 96, 0.2);
+    padding: 40px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.booking-info__card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-magma);
+}
+
+.booking-info__card-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-magma);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.booking-info__card-title::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background: rgba(157, 128, 96, 0.2);
+}
+
+.booking-info__text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-cream);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.booking-info__text:last-child {
+    margin-bottom: 0;
+}
+
+.booking-info__list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.booking-info__list li {
+    font-family: var(--font-body);
+    color: var(--color-cream);
+    padding-left: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.booking-info__list li::before {
+    content: '•';
+    color: var(--color-magma);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.booking-info__footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.booking-info__back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-ash);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 15px 30px;
+    border: 1px solid var(--color-ash);
+    transition: all 0.3s ease;
+}
+
+.booking-info__back-btn:hover {
+    color: var(--color-cream);
+    border-color: var(--color-magma);
+    background: rgba(203, 52, 38, 0.1);
+}
+
+@media (max-width: 768px) {
+    .booking-info {
+        padding: 100px 0;
+    }
+
+    .booking-info__card {
+        padding: 25px;
+    }
+}

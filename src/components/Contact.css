@@ -192,3 +192,37 @@
     padding: 16px 24px;
   }
 }
+
+/* Text updates */
+.contact__text-wrapper {
+  margin-bottom: 40px;
+}
+
+.contact__text {
+  margin-bottom: 20px;
+}
+
+.contact__text-highlight {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--color-ash);
+  font-style: italic;
+}
+
+.contact__policy-link {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-magma);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.contact__policy-link:hover {
+  color: var(--color-cream);
+  text-decoration-color: var(--color-cream);
+}

@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Home from './components/Home'
 import Cocktails from './components/Cocktails'
 import Food from './components/Food'
+import BookingInfo from './components/BookingInfo'
 import './App.css'
 
 function ScrollToTop() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cocktails" element={<Cocktails />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/info" element={<BookingInfo />} />
         </Routes>
 
         <footer className="footer">

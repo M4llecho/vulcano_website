@@ -129,8 +129,8 @@ export default function Home() {
             style={{ color: 'inherit', textDecoration: 'underline' }}
           >
             Federico "Kay" Maliseno
-          </a>{' '}
-          e{' '}
+          </a>
+          ,{' '}
           <a
             href="https://www.instagram.com/djlauren_official"
             target="_blank"
@@ -138,6 +138,15 @@ export default function Home() {
             style={{ color: 'inherit', textDecoration: 'underline' }}
           >
             Federico "Lauren" Laurenti
+          </a>{' '}
+          e{' '}
+          <a
+            href="https://www.instagram.com/phebomusic"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'inherit', textDecoration: 'underline' }}
+          >
+            Sergio "Phebo" Rossi
           </a>
           . Ritmi Reggaeton, Italiana e Techno per un'esperienza immersiva dove
           il sound incontra l'eleganza del soft-clubbing d'avanguardia.
