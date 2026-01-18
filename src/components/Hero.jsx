@@ -28,14 +28,12 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <div className="hero__logo">
-          <img
-            src="/logo.svg"
-            alt="Vulcano Logo"
-            className="hero__triangle"
-          />
-        </div>
-        <h1 className="hero__title">VULCANO</h1>
+        <img
+          src="/logo_vulcano.svg"
+          alt="Vulcano Logo"
+          className="hero__triangle"
+        />
+        <img src="/scritta_vulcano.svg" alt="VULCANO" className="hero__title-image" />
         <p className="hero__subtitle">Dinner to club</p>
         <button className="btn btn--primary hero__cta" onClick={scrollToContent}>
           Prenota l'Esperienza
