@@ -120,3 +120,6 @@ dist/
 dist
 .DS_Store
 *.local
+
+# Markdown files
+*.md

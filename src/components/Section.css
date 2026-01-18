@@ -46,6 +46,16 @@
   color: var(--color-black);
 }
 
+.section--cream .btn {
+  border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+.section--cream .btn:hover {
+  background: var(--color-black);
+  color: var(--color-cream);
+}
+
 .section__text {
   font-family: var(--font-body);
   font-size: clamp(1rem, 2vw, 1.15rem);
@@ -55,29 +65,7 @@
   opacity: 0.9;
 }
 
-/* Animation States - allineate a Hero */
-.fade-element {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.section--visible .fade-element {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.section--visible .fade-element:nth-child(1) {
-  transition-delay: 0s;
-}
-
-.section--visible .fade-element:nth-child(2) {
-  transition-delay: 0.15s;
-}
-
-.section--visible .fade-element:nth-child(3) {
-  transition-delay: 0.3s;
-}
+/* Animation States - gestite da GSAP in App.jsx */
 
 /* Decorative Elements */
 .section::before {

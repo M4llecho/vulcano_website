@@ -5,7 +5,7 @@ export default function Hero() {
   const videoRef = useRef(null)
 
   const scrollToContent = () => {
-    const nextSection = document.getElementById('cucina')
+    const nextSection = document.getElementById('contact')
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' })
     }

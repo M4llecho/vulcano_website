@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './Section.css'
 
 export default function Section({
@@ -7,34 +7,13 @@ export default function Section({
   text,
   cta,
   ctaLink = '#booking',
+  isRouterLink = false,
   variant = 'dark',
   children
 }) {
-  const sectionRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('section--visible')
-          }
-        })
-      },
-      { threshold: 0.05 }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
     <section
       id={id}
-      ref={sectionRef}
       className={`section section--${variant}`}
     >
       <div className="container">
@@ -47,9 +26,27 @@ export default function Section({
           )}
           {children}
           {cta && (
-            <a href={ctaLink} className="btn fade-element">
-              {cta}
-            </a>
+            isRouterLink ? (
+              <Link to={ctaLink} className="btn fade-element">
+                {cta}
+              </Link>
+            ) : (
+              <a
+                href={ctaLink}
+                className="btn fade-element"
+                onClick={(e) => {
+                  if (ctaLink.startsWith('#')) {
+                    e.preventDefault()
+                    const element = document.querySelector(ctaLink)
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }
+                }}
+              >
+                {cta}
+              </a>
+            )
           )}
         </div>
       </div>

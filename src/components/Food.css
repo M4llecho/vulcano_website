@@ -1,0 +1,253 @@
+.food-page {
+  min-height: 100vh;
+  background: var(--color-cream);
+  color: var(--color-black);
+}
+
+/* Hero */
+.food-hero {
+  padding: 120px 24px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.food-back {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--color-ash);
+  transition: color 0.3s ease;
+}
+
+.food-back:hover {
+  color: var(--color-black);
+}
+
+.food-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  color: var(--color-black);
+}
+
+.food-hero__subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+
+/* Content */
+.food-content {
+  padding: 40px 0 100px;
+}
+
+/* Sections */
+.food-section {
+  margin-bottom: 80px;
+}
+
+.food-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--color-magma);
+}
+
+/* Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.food-card {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grids con altezze uniformi per sezione */
+.food-section--antipasti .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-section--primi .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-section--secondi .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-section--pizze .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-section--contorni .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-section--dolci .food-grid {
+  grid-auto-rows: 1fr;
+}
+
+.food-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 16px;
+}
+
+.food-card__name {
+  font-family: var(--font-logo);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--color-black);
+}
+
+.food-card__price {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-magma);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.food-card__description {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--color-ash);
+  line-height: 1.6;
+  text-transform: lowercase;
+}
+
+.food-card__description::first-letter {
+  text-transform: uppercase;
+}
+
+/* Allergeni nei box */
+.food-card__allergens {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+  flex-wrap: wrap;
+}
+
+.allergen-icon {
+  display: inline-flex;
+  width: 14px;
+  height: 14px;
+  color: var(--color-ash);
+  opacity: 0.6;
+  cursor: default;
+  transition: opacity 0.2s ease;
+}
+
+.allergen-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.allergen-icon:hover {
+  opacity: 1;
+}
+
+/* Legenda allergeni in fondo */
+.allergen-legend {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.allergen-legend__title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--color-ash);
+}
+
+.allergen-legend__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 32px;
+}
+
+.allergen-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.allergen-legend__symbol {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  color: var(--color-ash);
+  opacity: 0.8;
+}
+
+.allergen-legend__symbol svg {
+  width: 100%;
+  height: 100%;
+}
+
+.allergen-legend__name {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--color-ash);
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .food-hero {
+    padding: 100px 24px 40px;
+  }
+
+  .food-back {
+    position: static;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .food-section {
+    margin-bottom: 60px;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .food-card {
+    padding: 20px;
+  }
+
+  .food-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

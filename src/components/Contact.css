@@ -132,10 +132,11 @@
 /* Phone */
 .contact__phone {
   display: block;
-  font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
   color: var(--color-cream);
-  margin-bottom: 20px;
+  line-height: 1.6;
   transition: color 0.3s ease;
 }
 
@@ -147,6 +148,7 @@
 .contact__social {
   display: flex;
   gap: 16px;
+  margin-top: 12px;
 }
 
 .contact__social-link {
@@ -171,33 +173,7 @@
   background: rgba(203, 52, 38, 0.1);
 }
 
-/* Animation States */
-.fade-element {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.section--visible .fade-element {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.section--visible .fade-element:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.section--visible .fade-element:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.section--visible .fade-element:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.section--visible .fade-element:nth-child(4) {
-  transition-delay: 0.4s;
-}
+/* Animation States - gestite da GSAP in App.jsx */
 
 /* Responsive */
 @media (max-width: 768px) {

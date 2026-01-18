@@ -1,0 +1,131 @@
+.cocktails-page {
+  min-height: 100vh;
+  background: var(--color-black);
+  color: var(--color-cream);
+}
+
+/* Hero */
+.cocktails-hero {
+  padding: 120px 24px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.cocktails-back {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--color-ash);
+  transition: color 0.3s ease;
+}
+
+.cocktails-back:hover {
+  color: var(--color-cream);
+}
+
+.cocktails-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.cocktails-hero__subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+
+/* Content */
+.cocktails-content {
+  padding: 40px 0 100px;
+}
+
+/* Sections */
+.cocktails-section {
+  margin-bottom: 80px;
+}
+
+.cocktails-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--color-magma);
+}
+
+/* Grid */
+.cocktails-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.cocktail-card {
+  padding: 24px;
+  border: 1px solid rgba(157, 128, 96, 0.3);
+}
+
+.cocktail-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.cocktail-card__name {
+  font-family: var(--font-logo);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.cocktail-card__price {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-magma);
+  font-weight: 500;
+}
+
+.cocktail-card__ingredients {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--color-ash);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cocktails-hero {
+    padding: 100px 24px 40px;
+  }
+
+  .cocktails-back {
+    position: static;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .cocktails-section {
+    margin-bottom: 60px;
+  }
+
+  .cocktails-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cocktail-card {
+    padding: 20px;
+  }
+}
