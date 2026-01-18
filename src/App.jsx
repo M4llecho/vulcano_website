@@ -31,7 +31,7 @@ function App() {
         <footer className="footer">
           <div className="container">
             <div className="footer__logo">
-              <img src="/logo.svg" alt="Vulcano" />
+              <img src="/logo_vulcano.svg" alt="Vulcano" />
               <span>VULCANO</span>
             </div>
             <p className="footer__tagline">Dinner to club</p>

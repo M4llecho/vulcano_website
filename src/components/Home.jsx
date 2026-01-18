@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Hero from './Hero'
 import Section from './Section'
 import Contact from './Contact'
+import StructuredData from './StructuredData'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -90,6 +91,7 @@ export default function Home() {
         />
         <link rel="canonical" href="https://www.vulcanopontemilvio.com/" />
       </Helmet>
+      <StructuredData />
       <Hero />
 
       <Section
@@ -128,7 +130,7 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ color: 'inherit', textDecoration: 'underline' }}
           >
-            Federico "Kay" Maliseno
+            Federico Kay
           </a>
           ,{' '}
           <a
@@ -137,7 +139,7 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ color: 'inherit', textDecoration: 'underline' }}
           >
-            Federico "Lauren" Laurenti
+            Lauren
           </a>{' '}
           e{' '}
           <a
@@ -146,7 +148,7 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ color: 'inherit', textDecoration: 'underline' }}
           >
-            Sergio "Phebo" Rossi
+            Phebo
           </a>
           . Ritmi Reggaeton, Italiana e Techno per un'esperienza immersiva dove
           il sound incontra l'eleganza del soft-clubbing d'avanguardia.

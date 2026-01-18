@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './BookingInfo.css'
@@ -9,6 +10,14 @@ export default function BookingInfo() {
 
     return (
         <section className="booking-info">
+            <Helmet>
+                <title>Info & Policy | VULCANO Ponte Milvio</title>
+                <meta
+                    name="description"
+                    content="Leggi le policy di ingresso, dress code e informazioni sulle prenotazioni di VULCANO. Un ambiente selezionato per un'esperienza esclusiva a Roma."
+                />
+                <link rel="canonical" href="https://www.vulcanopontemilvio.com/info" />
+            </Helmet>
             <div className="container">
                 <div className="booking-info__content">
                     <header className="booking-info__header">
@@ -56,7 +65,7 @@ export default function BookingInfo() {
                                 Il tavolo è riservato per la durata della cena; in alcuni casi (durante i weekend) potrebbe essere richiesto il rilascio per il turno successivo (inizio ore 23:30). Chi desidera proseguire la serata nel dopocena è pregato di comunicarlo in fase di prenotazione.
                             </p>
                             <p>
-                                Per gruppi numerosi (7+ persone) o eventi privati, vi invitiamo a contattarci direttamente per concordare un menu dedicato.
+                                Per gruppi numerosi (8+ persone) o eventi privati, vi invitiamo a contattarci direttamente per concordare un menu dedicato.
                             </p>
                         </div>
                     </div>
