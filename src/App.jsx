@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Cocktails from './components/Cocktails'
 import Food from './components/Food'
 import BookingInfo from './components/BookingInfo'
+import Events from './components/Events'
 import './App.css'
 
 function ScrollToTop() {
@@ -16,6 +17,25 @@ function ScrollToTop() {
   return null
 }
 
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__logo">
+          <img src="/logo_vulcano.svg" alt="Vulcano" />
+          <span>VULCANO</span>
+        </div>
+        <p className="footer__tagline">Dinner to club</p>
+        <div className="footer__info">
+          <p>Via Flaminia, 479 - 00191 Roma</p>
+          <p>+39 351 407 2720 | +39 06 841 6419</p>
+        </div>
+        <p className="footer__copy">&copy; 2025 Vulcano Ponte Milvio. Tutti i diritti riservati.</p>
+      </div>
+    </footer>
+  )
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,22 +46,10 @@ function App() {
           <Route path="/cocktails" element={<Cocktails />} />
           <Route path="/food" element={<Food />} />
           <Route path="/info" element={<BookingInfo />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
 
-        <footer className="footer">
-          <div className="container">
-            <div className="footer__logo">
-              <img src="/logo_vulcano.svg" alt="Vulcano" />
-              <span>VULCANO</span>
-            </div>
-            <p className="footer__tagline">Dinner to club</p>
-            <div className="footer__info">
-              <p>Via Flaminia, 479 - 00191 Roma</p>
-              <p>+39 351 407 2720 | +39 06 841 6419</p>
-            </div>
-            <p className="footer__copy">&copy; 2025 Vulcano Ponte Milvio. Tutti i diritti riservati.</p>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </BrowserRouter>
   )

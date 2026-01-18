@@ -37,11 +37,11 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--color-ash);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .footer__info {
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .footer__info p {
@@ -54,6 +54,7 @@
   font-size: 0.75rem;
   color: var(--color-ash);
   opacity: 0.6;
+  margin-top: 32px;
 }
 
 /* Smooth Scrolling Enhancement */

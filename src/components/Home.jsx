@@ -97,7 +97,7 @@ export default function Home() {
       <Section
         id="cucina"
         title="Cucina Mediterranea e Terrazza"
-        text="Un viaggio tra i sapori autentici del Mediterraneo, avvolti dal calore elegante delle nostre sale o sulla suggestiva terrazza a Ponte Milvio. Un'atmosfera sospesa per chi cerca il gusto della tradizione in una veste contemporanea."
+        text="Un viaggio tra i sapori autentici del Mediterraneo, che prende vita nel calore elegante delle nostre sale e sulla suggestiva terrazza. Un'atmosfera sospesa dove la tradizione incontra l'eleganza contemporanea."
         cta="Esplora il Menu"
         ctaLink="/food"
         isRouterLink
