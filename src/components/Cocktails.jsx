@@ -77,7 +77,7 @@ export default function Cocktails() {
       </Helmet>
       <div className="cocktails-hero">
         <Link to="/" className="cocktails-back">
-          ← Torna alla Home
+          Torna alla Home
         </Link>
         <h1 className="cocktails-hero__title">Alchimia Liquida</h1>
         <p className="cocktails-hero__subtitle">I nostri cocktail d'autore</p>

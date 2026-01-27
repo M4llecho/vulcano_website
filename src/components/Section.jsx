@@ -9,6 +9,8 @@ export default function Section({
   ctaLink = '#booking',
   isRouterLink = false,
   variant = 'dark',
+  number,
+  verticalText,
   children
 }) {
   return (
@@ -16,6 +18,12 @@ export default function Section({
       id={id}
       className={`section section--${variant}`}
     >
+      {/* Decorative Number */}
+      {number && <span className="section__number">{number}</span>}
+
+      {/* Vertical Text */}
+      {verticalText && <span className="section__vertical-text">{verticalText}</span>}
+
       <div className="container">
         <div className="section__content">
           {title && (

@@ -39,7 +39,7 @@ export default function Events() {
             <div className="container">
                 <div className="events__content">
                     <Link to="/" className="events__back">
-                        ← Torna alla Home
+                        Torna alla Home
                     </Link>
                     <header className="events__header">
                         <h1 className="events__title">Formule Evento</h1>

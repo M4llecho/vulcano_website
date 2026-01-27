@@ -13,20 +13,41 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      {/* Decorative Corners */}
+      <div className="hero__corner hero__corner--tl" />
+      <div className="hero__corner hero__corner--tr" />
+      <div className="hero__corner hero__corner--bl" />
+      <div className="hero__corner hero__corner--br" />
+
+      {/* Video Background */}
       <div className="hero__video-container">
         <video
           ref={videoRef}
           className="hero__video"
           autoPlay
           muted
+          loop
           playsInline
           poster="/poster.jpg"
         >
           <source src="/VULCANO_ERUPTION.mp4" type="video/mp4" />
         </video>
         <div className="hero__overlay" />
+        <div className="hero__heat-effect" />
       </div>
 
+      {/* Floating Embers */}
+      <div className="hero__embers">
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+        <div className="hero__ember" />
+      </div>
+
+      {/* Main Content */}
       <div className="hero__content">
         <img
           src="/logo_vulcano.svg"
@@ -40,6 +61,7 @@ export default function Hero() {
         </button>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="hero__scroll-indicator">
         <span>Scorri</span>
         <div className="hero__scroll-line" />

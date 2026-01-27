@@ -1,18 +1,39 @@
-/* VULCANO Brand Colors */
+/* VULCANO Brand - Luxury Volcanic Design System */
 :root {
+  /* Core Volcanic Palette */
   --color-magma: #cb3426;
+  --color-magma-bright: #ff4d3a;
+  --color-magma-glow: rgba(203, 52, 38, 0.6);
+  --color-lava: #e85a4f;
+  --color-ember: #ff6b35;
   --color-ash: #9d8060;
+  --color-ash-light: #b8a088;
+  --color-smoke: rgba(157, 128, 96, 0.15);
   --color-cream: #fbeed9;
+  --color-cream-warm: #f5e6d0;
+  --color-obsidian: #0a0a0a;
   --color-black: #000000;
+  --color-charcoal: #1a1a1a;
 
-  /* Typography - Brand Identity Vulcano */
-  --font-logo: 'Josefin Sans', sans-serif;  /* Font geometrico per logo/titoli */
-  --font-display: 'Cormorant Garamond', Georgia, serif;  /* Font elegante per sottotitoli */
-  --font-body: 'Josefin Sans', -apple-system, sans-serif;  /* Font body */
+  /* Typography - Dramatic & Refined */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-headline: 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
 
   /* Spacing */
-  --section-padding: 100px;
-  --container-max-width: 1200px;
+  --section-padding: 120px;
+  --container-max-width: 1400px;
+
+  /* Effects */
+  --glow-magma: 0 0 60px rgba(203, 52, 38, 0.4), 0 0 120px rgba(203, 52, 38, 0.2);
+  --glow-subtle: 0 0 40px rgba(203, 52, 38, 0.15);
+  --shadow-volcanic: 0 25px 80px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 8px 40px rgba(0, 0, 0, 0.3);
+
+  /* Gradients */
+  --gradient-lava: linear-gradient(135deg, var(--color-magma) 0%, var(--color-ember) 50%, var(--color-lava) 100%);
+  --gradient-volcanic: linear-gradient(180deg, var(--color-obsidian) 0%, var(--color-charcoal) 50%, var(--color-black) 100%);
+  --gradient-heat: radial-gradient(ellipse at center, rgba(203, 52, 38, 0.15) 0%, transparent 70%);
 }
 
 /* Reset */
@@ -29,16 +50,33 @@ html {
 body {
   font-family: var(--font-body);
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-cream);
   background-color: var(--color-black);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Noise Texture Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
 }
 
 a {
@@ -57,39 +95,62 @@ img, video {
   width: 100%;
   max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 40px;
 }
 
-/* Button Styles */
+/* Button Styles - Volcanic */
 .btn {
   display: inline-block;
-  padding: 16px 40px;
+  padding: 18px 48px;
   font-family: var(--font-body);
   font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 1px solid var(--color-cream);
+  border: 1px solid var(--color-ash);
   background: transparent;
   color: var(--color-cream);
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-lava);
+  transition: left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
 }
 
 .btn:hover {
-  background: var(--color-cream);
-  color: var(--color-black);
+  border-color: var(--color-magma);
+  color: var(--color-cream);
+  box-shadow: var(--glow-subtle);
+}
+
+.btn:hover::before {
+  left: 0;
 }
 
 .btn--primary {
-  background: var(--color-magma);
-  border-color: var(--color-magma);
+  background: var(--gradient-lava);
+  border: none;
+  box-shadow: var(--glow-subtle);
+}
+
+.btn--primary::before {
+  background: var(--color-cream);
 }
 
 .btn--primary:hover {
-  background: transparent;
   color: var(--color-magma);
-  border-color: var(--color-magma);
+  box-shadow: var(--glow-magma);
 }
 
 /* Section Base */
@@ -100,6 +161,7 @@ img, video {
   justify-content: center;
   padding: var(--section-padding) 0;
   position: relative;
+  overflow: hidden;
 }
 
 .section--dark {
@@ -112,7 +174,7 @@ img, video {
 }
 
 .section--ash {
-  background: var(--color-ash);
+  background: linear-gradient(135deg, var(--color-ash) 0%, #7a6550 100%);
   color: var(--color-cream);
 }
 
@@ -140,14 +202,34 @@ img, video {
   transform: translateY(0);
 }
 
+/* Glow text effect */
+.glow-text {
+  text-shadow: 0 0 40px var(--color-magma-glow);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   :root {
-    --section-padding: 60px;
+    --section-padding: 80px;
+  }
+
+  .container {
+    padding: 0 24px;
   }
 
   .btn {
-    padding: 14px 32px;
+    padding: 16px 36px;
     font-size: 0.8rem;
+  }
+}
+
+/* Custom Cursor for desktop */
+@media (hover: hover) {
+  * {
+    cursor: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' stroke='%23cb3426' stroke-width='2'/%3E%3Ccircle cx='10' cy='10' r='2' fill='%23cb3426'/%3E%3C/svg%3E") 10 10, auto;
+  }
+
+  a, button, .btn {
+    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23cb3426' fill-opacity='0.3'/%3E%3Ccircle cx='12' cy='12' r='4' fill='%23cb3426'/%3E%3C/svg%3E") 12 12, pointer;
   }
 }

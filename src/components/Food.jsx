@@ -221,7 +221,7 @@ export default function Food() {
       </Helmet>
       <div className="food-hero">
         <Link to="/" className="food-back">
-          ← Torna alla Home
+          Torna alla Home
         </Link>
         <h1 className="food-hero__title">Cucina Mediterranea</h1>
         <p className="food-hero__subtitle">I sapori autentici della tradizione</p>

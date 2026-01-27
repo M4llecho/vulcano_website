@@ -34,7 +34,7 @@ export default function Home() {
       const sectionId = section.id || section.className
 
       // Set initial state immediately
-      gsap.set(fadeElements, { opacity: 0, y: 30 })
+      gsap.set(fadeElements, { opacity: 0, y: 40 })
 
       ScrollTrigger.create({
         trigger: section,
@@ -53,9 +53,9 @@ export default function Home() {
           gsap.to(fadeElements, {
             opacity: 1,
             y: 0,
-            duration: 0.8,
-            stagger: 0.15,
-            ease: 'power2.out'
+            duration: 1,
+            stagger: 0.2,
+            ease: 'power3.out'
           })
         }
       })
@@ -102,6 +102,8 @@ export default function Home() {
         ctaLink="/food"
         isRouterLink
         variant="cream"
+        number="01"
+        verticalText="Cucina"
       />
 
       <Section
@@ -112,6 +114,8 @@ export default function Home() {
         ctaLink="/cocktails"
         isRouterLink
         variant="dark"
+        number="02"
+        verticalText="Mixology"
       />
 
       <Section
@@ -120,6 +124,8 @@ export default function Home() {
         cta="Vivi l'Esperienza"
         ctaLink="#contact"
         variant="ash"
+        number="03"
+        verticalText="Clubbing"
       >
         <p className="section__text fade-element">
           Ogni Venerdì e Sabato, l'atmosfera di Vulcano si accende. Dopo la cena,
@@ -128,7 +134,7 @@ export default function Home() {
             href="https://www.instagram.com/federico.kay"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'inherit', textDecoration: 'underline' }}
+            style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '3px' }}
           >
             Federico Kay
           </a>
@@ -137,7 +143,7 @@ export default function Home() {
             href="https://www.instagram.com/djlauren_official"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'inherit', textDecoration: 'underline' }}
+            style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '3px' }}
           >
             Lauren
           </a>{' '}
@@ -146,7 +152,7 @@ export default function Home() {
             href="https://www.instagram.com/phebomusic"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'inherit', textDecoration: 'underline' }}
+            style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '3px' }}
           >
             Phebo
           </a>
