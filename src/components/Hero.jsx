@@ -49,6 +49,8 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="hero__content">
+        <h1 className="visually-hidden">VULCANO Ponte Milvio - Dinner to Club</h1>
+        <h2 className="visually-hidden">Cucina con pizza, Cocktail Bar, Terrace and Events</h2>
         <img
           src="/logo_vulcano.svg"
           alt="Vulcano Logo"
