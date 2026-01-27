@@ -59,7 +59,7 @@ export default function Events() {
                                     <li>Frittini misti</li>
                                     <li>Degustazione di pizza</li>
                                 </ul>
-                                <span className="events__formula-price">20€ <small>a persona</small></span>
+                                <span className="events__formula-price">20 <small>a persona</small></span>
                             </div>
                             <div className="events__formula-card">
                                 <ul className="events__formula-list">
@@ -67,7 +67,7 @@ export default function Events() {
                                     <li>Tagliere misto</li>
                                     <li>Degustazione di pizza</li>
                                 </ul>
-                                <span className="events__formula-price">25€ <small>a persona</small></span>
+                                <span className="events__formula-price">25 <small>a persona</small></span>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ export default function Events() {
                                     <li>Chips di patate</li>
                                     <li>Servizio torta</li>
                                 </ul>
-                                <span className="events__formula-price">20€ <small>a persona</small></span>
+                                <span className="events__formula-price">20 <small>a persona</small></span>
                             </div>
                             <div className="events__formula-card">
                                 <ul className="events__formula-list">
@@ -89,14 +89,14 @@ export default function Events() {
                                     <li>Servizio torta</li>
                                     <li>Bollicine</li>
                                 </ul>
-                                <span className="events__formula-price">20€ <small>a persona</small></span>
+                                <span className="events__formula-price">20 <small>a persona</small></span>
                             </div>
                             <div className="events__formula-card">
                                 <ul className="events__formula-list">
                                     <li>2 Cocktail classici</li>
                                     <li>Servizio torta</li>
                                 </ul>
-                                <span className="events__formula-price">25€ <small>a persona</small></span>
+                                <span className="events__formula-price">25 <small>a persona</small></span>
                             </div>
                             <div className="events__formula-card">
                                 <ul className="events__formula-list">
@@ -105,7 +105,7 @@ export default function Events() {
                                     <li>Bollicine</li>
                                     <li>Servizio torta</li>
                                 </ul>
-                                <span className="events__formula-price">28€ <small>a persona</small></span>
+                                <span className="events__formula-price">28 <small>a persona</small></span>
                             </div>
                             <div className="events__formula-card">
                                 <ul className="events__formula-list">
@@ -113,7 +113,7 @@ export default function Events() {
                                     <li>Chips</li>
                                     <li>Servizio torta</li>
                                 </ul>
-                                <span className="events__formula-price">28€ <small>a persona</small></span>
+                                <span className="events__formula-price">28 <small>a persona</small></span>
                             </div>
                         </div>
                     </div>

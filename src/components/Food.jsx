@@ -83,11 +83,10 @@ const antipasti = [
   { name: 'TARTARE DI TONNO', price: 18, allergens: ['pesce'] },
   { name: 'DEGUSTAZIONE DI FRITTI', price: 10, description: 'Supplì, crocchetta di patate, crocchetta di melanzana, mozzarellina, montanara', allergens: ['glutine', 'uova', 'latte', 'sedano'] },
   { name: 'TARTARE DI FASSONA PIEMONTESE CON BURRATINA E POMODORO SECCO', price: 18, allergens: ['latte'] },
+  { name: 'TARTARE DI FASSONA PIEMONTESE CON CARCIOFI CROCCANTI', price: 18, allergens: [] },
   { name: 'PARMIGIANA DI MELANZANE', price: 10, allergens: ['latte', 'glutine', 'uova'] },
   { name: 'BRUSCHETTA MEDITERRANEA', price: 6, description: 'Pane fatto in casa con pomodoro datterino rosso, stracciatella di Andria e alici di Cetara', allergens: ['glutine', 'latte', 'pesce'] },
-  { name: 'BRUSCHETTA DI CAMPO', price: 6, description: 'Pane fatto in casa con cicorietta ripassata in padella', allergens: ['glutine'] },
-  { name: 'INSALATA DI CARCIOFI CON FIOCCHI DI GRANA', price: 12, allergens: ['latte'] },
-  { name: 'BAO CON PULLED PORK', price: 6, allergens: ['glutine', 'soia', 'latte', 'senape'] }
+  { name: 'BRUSCHETTA DI CAMPO', price: 6, description: 'Pane fatto in casa con cicorietta ripassata in padella', allergens: ['glutine'] }
 ]
 
 const primi = [
@@ -96,16 +95,18 @@ const primi = [
   { name: 'PICI AL RAGÙ BIANCO', price: 15, allergens: ['glutine', 'sedano', 'latte', 'solfiti'] },
   { name: 'TONNARELLI CACIO E PEPE CON TARTARE DI GAMBERO ROSSO', price: 20, allergens: ['glutine', 'latte', 'crostacei'] },
   { name: 'TAGLIOLINI AL TARTUFO', price: 20, allergens: ['glutine', 'uova', 'latte'] },
-  { name: 'SPAGHETTONE CON FONDUTA DI POMODORO E CRUMBLE DI BASILICO E PARMIGIANO', price: 12, allergens: ['glutine', 'latte'] },
-  { name: 'TONNARELLI CON CARCIOFI, GUANCIALE CROCCANTE E PECORINO ROMANO', price: 14, allergens: ['glutine', 'latte'] }
+  { name: 'MEZZI PACCHERI AL POMODORO', price: 12, allergens: ['glutine'] },
+  { name: 'TONNARELLI CON CARCIOFI, GUANCIALE CROCCANTE E PECORINO ROMANO', price: 15, allergens: ['glutine', 'latte'] }
 ]
 
 const secondi = [
   { name: 'TATAKI DI TONNO IN CROSTA DI SESAMO CON MIX DI VERDURE AL FORNO', price: 18, allergens: ['pesce', 'sesamo', 'soia'] },
   { name: 'STRACCETTI DI MANZO AI CARCIOFI', price: 18, allergens: ['glutine'] },
-  { name: 'TAGLIATA DI MANZO AL ROSMARINO CON PATATE FRITTE', price: 22, allergens: [] },
+  { name: 'TAGLIATA DI MANZO AL ROSMARINO CON PATATE FRITTE', price: 24, allergens: [] },
   { name: 'BOCCONCINI DI POLLO IN SALSA TERIYAKI CON CICORIA RIPASSATA', price: 16, allergens: ['glutine', 'soia'] },
-  { name: 'FILETTO DI VITELLA COME SALTIMBOCCA CON CICORIA RIPASSATA', price: 28, allergens: ['glutine', 'solfiti', 'latte'] }
+  { name: 'FILETTO DI MANZO AL PEPE VERDE CON CICORIA RIPASSATA', price: 28, allergens: ['latte', 'solfiti'] },
+  { name: 'COTOLETTE DI VITELLA DORATE CON RUCOLA E DATTERINI', price: 18, allergens: ['glutine', 'uova'] },
+  { name: 'SALTIMBOCCA ALLA ROMANA CON CICORIA RIPASSATA', price: 18, allergens: ['glutine', 'solfiti'] }
 ]
 
 const pizze = [
@@ -131,7 +132,7 @@ const dolci = [
   { name: 'MILLEVOGLIE VULCANO', price: 8, allergens: ['glutine', 'latte', 'uova'] },
   { name: 'TIRAMISÙ', price: 7, allergens: ['glutine', 'latte', 'uova'] },
   { name: 'CREMA CATALANA FLAMBÉ', price: 7, allergens: ['latte', 'uova'] },
-  { name: 'TAGLIATA DI FRUTTA', price: 10, allergens: [] }
+  { name: 'DOLCE DEL GIORNO', price: 9, allergens: ['glutine', 'latte', 'uova'] }
 ]
 
 function AllergenIcon({ allergenKey }) {
