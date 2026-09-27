@@ -5,6 +5,7 @@ import Cocktails from './components/Cocktails'
 import Food from './components/Food'
 import BookingInfo from './components/BookingInfo'
 import Events from './components/Events'
+import AfterDinner from './components/AfterDinner'
 import './App.css'
 
 function ScrollToTop() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/food" element={<Food />} />
           <Route path="/info" element={<BookingInfo />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/afterdinner" element={<AfterDinner />} />
         </Routes>
 
         <Footer />

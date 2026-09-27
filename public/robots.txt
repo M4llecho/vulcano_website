@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /afterdinner
 
 Sitemap: https://www.vulcanopontemilvio.com/sitemap.xml
