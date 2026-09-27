@@ -71,6 +71,39 @@
   letter-spacing: 0.05em;
 }
 
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(157, 128, 96, 0.3);
+  color: var(--color-ash-light);
+  transition: border-color 0.4s ease, color 0.4s ease;
+}
+
+.footer__social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__social-link:hover {
+  border-color: var(--color-magma);
+  color: var(--color-cream);
+}
+
+.footer__social-link:focus-visible {
+  outline: 2px solid var(--color-ember);
+  outline-offset: 2px;
+}
+
 .footer__copy {
   font-family: var(--font-body);
   font-size: 0.75rem;

@@ -183,8 +183,8 @@
   background: linear-gradient(90deg, rgba(157, 128, 96, 0.4), transparent);
 }
 
-.ad-group__note {
-  margin-top: 24px;
+.ad-panel__note {
+  margin-top: 32px;
   padding: 14px 16px;
   border-left: 2px solid var(--color-magma);
   background: rgba(203, 52, 38, 0.08);

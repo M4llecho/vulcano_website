@@ -5,6 +5,8 @@ import './AfterDinner.css'
 // Pagina raggiungibile solo via QR code: non linkarla da nessuna parte.
 // Contenuti da DRINK_LIST_VULCANO.pdf
 
+const minimumSpendNote = 'Venerdì, sabato e nelle serate evento è prevista una consumazione minima di € 12 a persona.'
+
 const menu = [
   {
     id: 'cocktails',
@@ -20,7 +22,8 @@ const menu = [
           { name: 'Zanzibar', price: 14, desc: 'Tequila, lime, mango, ginger ale' },
           { name: 'Guadalupe', price: 14, desc: 'Mezcal, lime, vanilla, cranberry, lavender' },
           { name: 'Santorini', price: 14, desc: 'Mezcal, vermouth, campari, coffee' },
-          { name: 'Portorico', price: 14, desc: 'Cachaca, lime, passion fruit, pineapple, cloves' }
+          { name: 'Portorico', price: 14, desc: 'Cachaca, lime, passion fruit, pineapple, cloves' },
+          { name: 'Cocktail classici', price: 12, desc: 'I grandi classici della miscelazione, preparati su richiesta' }
         ]
       }
     ]
@@ -57,8 +60,7 @@ const menu = [
           { name: 'Dolci', price: 10 },
           { name: 'Tagliata di frutta', price: 10 },
           { name: 'Olive e taralli', price: 5 }
-        ],
-        note: 'Venerdì, sabato e durante le serate con DJ set il minimo spending è di 12 euro a persona'
+        ]
       }
     ]
   },
@@ -421,9 +423,9 @@ export default function AfterDinner() {
                 <MenuItem key={item.name} {...item} />
               ))}
             </ul>
-            {group.note && <p className="ad-group__note">{group.note}</p>}
           </div>
         ))}
+        <p className="ad-panel__note">{minimumSpendNote}</p>
       </section>
     </div>
   )
