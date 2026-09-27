@@ -5,7 +5,7 @@ import './AfterDinner.css'
 // Pagina raggiungibile solo via QR code: non linkarla da nessuna parte.
 // Contenuti da DRINK_LIST_VULCANO.pdf
 
-const minimumSpendNote = 'Venerdì, sabato e nelle serate evento è prevista una consumazione minima di € 12 a persona.'
+const minimumSpendNote = 'Nelle serate evento e nel fine settimana, per il servizio dopocena è richiesta una consumazione minima al tavolo di 12€ a persona.'
 
 const menu = [
   {
